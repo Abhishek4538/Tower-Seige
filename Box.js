@@ -17,5 +17,10 @@ class Box extends BaseClass {
       pop();
     }
    }
+   score(){
+     if(this.Visiblity<0 && this.Visiblity>-265){
+       score++
+     }
+   }
 
 };
