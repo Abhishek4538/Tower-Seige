@@ -82,7 +82,7 @@ function draw(){
     slingshot.display();
         
    text("Score: "+score,760,40)
-   if(hour>=12 && hour<=24){
+   if(hour>=12 && hour<=23){
     text("Time"+hour+"pm",750,30)
 }
 else{
@@ -116,7 +116,7 @@ async function getTime(){
 
     var datetime = responseJSON.datetime;
      hour = datetime.slice(11,13);
-     if(hour>=06 && hour<=19){
+     if(hour>=12 && hour<=23){
         bg = "black.png";
     }
     else{
